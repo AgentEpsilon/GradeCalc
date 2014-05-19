@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Grade Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<script src = "gradecalc.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+	<h1>Enter in your grades!</h1>
+	<table id="formula">
+		<tr><td class="left"><label for="cb">Have full semester grade?</label></td><td class="right"><input class="input" id="cb" type="checkbox" onclick="handleS1(this)"></td></tr>
+		<tr class="s1"><td class="left"><label for="mp1">MP1</label></td><td class="right"><input class="input" type="text" id="mp1"></td></tr>
+		<tr class="s1"><td class="left"><label for="mp2">MP2</label></td><td class="right"><input class="input" type="text" id="mp2"></td></tr>
+		<tr class="s1"><td class="left"><label for="sx1">SX1</label></td><td class="right"><input class="input" type="text" id="sx1"></td></tr>
+		<tr class="sg1" style="display: none;"><td class="left"><label for="s1">S1</label></td><td class="right"><input class="input" type="text" id="s1"></td></tr>
+		<tr><td class="left"><label for="mp3">MP3</label></td><td class="right"><input class="input" type="text" id="mp3"></td></tr>
+		<tr><td class="left"><label for="mp4">MP4</label></td><td class="right"><input class="input" type="text" id="mp4"></td></tr>
+		<tr><td class="left"><label for="desired">Desired Grade</label></td><td class="right"><select id="desired">
+			<option value="a">A</option>
+			<option value="b">B</option>
+			<option value="c">C</option>
+		</select></td></tr>
+		<tr><td class="left"><input type="button" value="Clear" onclick="clearFields()"></td><td class="right"><input type="button" value="Submit" onclick="submit()"></td></tr>
+	</table>
+	</div>
+</body>
+</html>
